@@ -279,7 +279,7 @@ class eZStaticCache
     }
     protected function cleanPathPrefix( $url )
     {
-		$regexPrefix = '#^\/?' . $this->PathPrefix .  '#';
+		$regexPrefix = '#^\/?' . $this->PathPrefix .  '#i';
         return ltrim( preg_replace( $regexPrefix , '', $url ), '/' );	
     }
     /*!
